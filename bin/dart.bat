@@ -36,6 +36,7 @@ SET cache_dir=%FLUTTER_ROOT%\bin\cache
 SET dart_sdk_path=%cache_dir%\dart-sdk
 SET dart=%dart_sdk_path%\bin\dart.exe
 
+
 SET exit_with_errorlevel=%FLUTTER_ROOT%/bin/internal/exit_with_errorlevel.bat
 
 REM Chaining the call to 'dart' and 'exit' with an ampersand ensures that
@@ -47,3 +48,6 @@ REM Do not use the CALL command in the next line to execute Dart. CALL causes
 REM Windows to re-read the line from disk after the CALL command has finished
 REM regardless of the ampersand chain.
 "%dart%" %* & "%exit_with_errorlevel%"
+
+SET MAIN FOLD avoids (flutter main.dart) FOR modifers in the HOME.dar
+VOID blox 
